@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/data-attrib.css">
+        <title>data-attrib</title>
+    </head>
+
+    <body>
+        <div>
+            <button onclick="onClickBtn()">Select</button>
+            
+            <h2>by Element</h2>
+            <h2 class="h2">by Class</h2>
+            <h2 id="h2">by Id</h2>
+    
+            <h2 alt="Some text">by attribute</h2>
+            <h2 alt="A heading">by attribute value</h2>
+            <h2 alt="A heading" title="heading">by 2 attribute values</h2>
+        </div>
+        
+        <div 
+            class="box blue-thing"
+            alt="some alternative text..."
+            data-max-speed="90"
+            data-click-count="0"
+            onclick="onBoxClicked(this)">
+
+            <h2>Hello</h2>
+            
+        </div>
+
+        <script src="js/data-attrib.js"></script>
+    </body>
+
+</html>
