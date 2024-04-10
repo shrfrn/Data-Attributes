@@ -1,6 +1,6 @@
 function onClickBtn(){
 
-    // var elHeading = document.querySelector('h2')
+    var elHeading = document.querySelector('h2')
     // var elHeading = document.querySelector('.h2')
     // var elHeading = document.querySelector('#h2')
     
@@ -8,7 +8,7 @@ function onClickBtn(){
     
     // var elHeading = document.querySelector('[alt]')
     // var elHeading = document.querySelector('[alt="A heading"]')
-    var elHeading = document.querySelector('[alt="A heading"][title="heading"]')
+    // var elHeading = document.querySelector('[alt="A heading"][title="heading"]')
 
     elHeading.style.backgroundColor = 'lightblue'
 }
@@ -31,7 +31,7 @@ function onBoxClicked(elBox) {
     // var clickCount = elBox.getAttribute('data-click-count')
     // console.log('clickCount: ', clickCount)
 
-    // Accessing data-attributes from js
+    // Accessing data-attributes using the dataset object
 
     // elBox.dataset.clickCount = +elBox.dataset.clickCount + 1
     // console.log('dataset:', elBox.dataset)
