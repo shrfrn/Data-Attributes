@@ -7,7 +7,7 @@ function onClickBtn(){
     // Selecting elements using attributes
     
     // var elHeading = document.querySelector('[alt]')
-    // var elHeading = document.querySelector('[alt="A heading"]')
+    var elHeading = document.querySelector('[alt="A heading"]')
     // var elHeading = document.querySelector('[alt="A heading"][title="heading"]')
 
     elHeading.style.backgroundColor = 'lightblue'
@@ -20,21 +20,23 @@ function onBoxClicked(elBox) {
     var altText = elBox.getAttribute('alt')
     console.log('altText: ', altText)
     
-    // var classes = elBox.getAttribute('class')
-    // console.log('classes: ', classes)
+    var classes = elBox.getAttribute('class')
+    console.log('classes: ', classes)
     
     // getAttribute() with data-attributes
 
-    // var maxSpeed = elBox.getAttribute('data-max-speed')
-    // console.log('maxSpeed: ', maxSpeed)
+    var maxSpeed = elBox.getAttribute('data-max-speed')
+    console.log('maxSpeed: ', maxSpeed)
 
-    // var clickCount = elBox.getAttribute('data-click-count')
-    // console.log('clickCount: ', clickCount)
+    var clickCount = elBox.getAttribute('data-click-count')
+    console.log('clickCount: ', clickCount)
 
     // Accessing data-attributes using the dataset object
 
-    // elBox.dataset.clickCount = +elBox.dataset.clickCount + 1
-    // console.log('dataset:', elBox.dataset)
+    console.log('dataset:', elBox.dataset)
+    
+    elBox.dataset.clickCount = +elBox.dataset.clickCount + 1
+    console.log('clickCount:', elBox.dataset.clickCount)
 
     // Query Selector on a DOM subtree
 
